@@ -4,7 +4,7 @@ readCSVDirectory <- function(dir) {
   files <- files[seq(2:length(files))]
   for (file in files) {
     data2 <- read.csv(paste(dir, '/', file, sep=""))
-    merge(data, data2)
+    data <- rbind(data, data2)
   }
   return(data)
 }
