@@ -1,0 +1,3 @@
+hours <- function(timeString) {
+  
+}
